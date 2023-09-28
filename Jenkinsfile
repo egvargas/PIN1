@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh "docker run tpin1 npm test"
             }
-                }
+        }
 
         stage('Push to Docker Hub') {
             steps {

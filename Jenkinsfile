@@ -25,7 +25,7 @@ pipeline {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'DockerHub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
                         sh "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD"
-                        sh "docker push egvargas/tpi1"
+                        sh "docker push egvargas/tpin1"
                     }
                 }
             }

@@ -17,7 +17,8 @@ pipeline {
         stage('Run tests') {
             steps {
                 sh '''
-                docker run tpin1:latest npm test 
+                
+                docker run tpin1 npm test 
                 '''
                     }
                 }

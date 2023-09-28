@@ -9,7 +9,7 @@ pipeline {
         stage('Building image') {
             steps {
                 sh '''
-                docker build -t egvargas/tpin1 .
+                docker build -t egvargas/pin1 .
                 '''  
             }
         }
@@ -17,7 +17,7 @@ pipeline {
         stage('Run tests') {
             steps {
                 sh '''
-                docker run tpi1:latest npm test 
+                docker run pin1:latest npm test 
                 '''
                     }
                 }
